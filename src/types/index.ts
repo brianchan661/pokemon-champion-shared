@@ -204,6 +204,42 @@ export interface TeamPokemon {
   teraType?: string; // Gen 9 Tera Type
   gigantamaxFactor?: boolean; // Gen 8 Gigantamax
   megaEvolution?: string; // Gen 6 (mega stone identifier)
+
+  // Extended properties (populated when fetching from API)
+  pokemonData?: {
+    id: number;
+    nationalNumber: string;
+    name: string;
+    types: string[];
+    imageUrl?: string;
+  };
+  movesData?: Array<{
+    id: number;
+    identifier: string;
+    name: string;
+    type: string;
+    category: string;
+    power: number | null;
+    accuracy: number | null;
+  }>;
+  itemData?: {
+    id: number;
+    identifier: string;
+    name: string;
+    spriteUrl?: string;
+  };
+  natureData?: {
+    id: number;
+    identifier: string;
+    name: string;
+    increasedStat?: string;
+    decreasedStat?: string;
+  };
+  abilityData?: {
+    id: number;
+    identifier: string;
+    name: string;
+  };
 }
 
 export interface Team {
