@@ -221,6 +221,7 @@ export interface TeamPokemon {
     category: string;
     power: number | null;
     accuracy: number | null;
+    pp: number | null;
   }>;
   itemData?: {
     id: number;
