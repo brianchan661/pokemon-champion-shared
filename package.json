@@ -1,0 +1,31 @@
+{
+  "name": "@brianchan661/pokemon-champion-shared",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types for Pokemon Champion project",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brianchan661/pokemon-champion-shared.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["pokemon", "types", "typescript"],
+  "author": "brianchan661",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "README.md"
+  ]
+}
