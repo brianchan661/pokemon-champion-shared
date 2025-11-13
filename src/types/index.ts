@@ -7,6 +7,16 @@ export interface LocalizedText {
   'zh-TW'?: string;
 }
 
+// Generic paginated response
+export interface PaginatedResponse<T> {
+  data: T[];
+  total: number;
+  page: number;
+  pageSize: number;
+  totalPages: number;
+  hasMore: boolean;
+}
+
 // Simplified Pokemon for MVP (List View - Lightweight)
 export interface Pokemon {
   id: number;
