@@ -1,6 +1,6 @@
 {
   "name": "@brianchan661/pokemon-champion-shared",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shared TypeScript types for Pokemon Champion project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

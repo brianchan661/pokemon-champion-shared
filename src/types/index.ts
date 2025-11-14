@@ -20,7 +20,7 @@ export interface PaginatedResponse<T> {
 // Simplified Pokemon for MVP (List View - Lightweight)
 export interface Pokemon {
   id: number;
-  nationalNumber: string;
+  nationalNumber: number;
   name: string;
   types: string[];
   ability1: string;        // Primary ability identifier (required)
@@ -218,7 +218,7 @@ export interface TeamPokemon {
   // Extended properties (populated when fetching from API)
   pokemonData?: {
     id: number;
-    nationalNumber: string;
+    nationalNumber: number;
     name: string;
     types: string[];
     imageUrl?: string;
