@@ -261,6 +261,7 @@ export interface Team {
   pokemon: TeamPokemon[];
   authorId: string;
   authorUsername?: string;  // Optional, populated when fetching from DB
+  authorAvatarUrl?: string; // Optional, populated when fetching from DB
   isPublic: boolean;
   likes: number;
   createdAt: Date;
