@@ -33,6 +33,13 @@ export interface Pokemon {
   spAtkMax: number;
   spDefMax: number;
   speedMax: number;
+  // Base stats for visualization
+  hpBase?: number;
+  attackBase?: number;
+  defenseBase?: number;
+  spAtkBase?: number;
+  spDefBase?: number;
+  speedBase?: number;
   statTotal: number;
   createdAt?: Date;
   updatedAt?: Date;
