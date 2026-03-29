@@ -230,16 +230,7 @@ export interface TeamPokemon {
     types: string[];
     imageUrl?: string;
   };
-  movesData?: Array<{
-    id: number;
-    identifier: string;
-    name: string;
-    type: string;
-    category: string;
-    power: number | null;
-    accuracy: number | null;
-    pp: number | null;
-  }>;
+  movesData?: MoveData[];
   itemData?: {
     id: number;
     identifier: string;
@@ -258,6 +249,17 @@ export interface TeamPokemon {
     identifier: string;
     name: string;
   };
+}
+
+export interface MoveData {
+  id: number;
+  identifier: string;
+  name: string;
+  type: string;
+  category: string;
+  power: number | null;
+  accuracy: number | null;
+  pp: number | null;
 }
 
 export interface Team {
