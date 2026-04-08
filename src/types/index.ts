@@ -41,6 +41,7 @@ export interface Pokemon {
   spDefBase?: number;
   speedBase?: number;
   statTotal: number;
+  forms?: PokemonForm[];
   createdAt?: Date;
   updatedAt?: Date;
 }
