@@ -41,6 +41,7 @@ export interface Pokemon {
   spDefBase?: number;
   speedBase?: number;
   statTotal: number;
+  nameLower?: string;      // URL slug identifier (e.g. "venusaur", "mr-mime")
   forms?: PokemonForm[];
   createdAt?: Date;
   updatedAt?: Date;
@@ -99,6 +100,7 @@ export interface PokemonForm {
   abilities: string[];
   baseStats: BaseStats;
   imageUrl: string;
+  nameLower?: string;  // URL slug for this form (e.g. "mega-venusaur")
 }
 
 export interface Move {
