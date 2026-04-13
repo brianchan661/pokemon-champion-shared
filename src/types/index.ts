@@ -230,6 +230,7 @@ export interface TeamPokemon {
     id: number;
     nationalNumber: number;
     name: string;
+    nameLower?: string;
     types: string[];
     imageUrl?: string;
   };
