@@ -209,7 +209,6 @@ export interface StatSpread {
 
 export interface TeamPokemon {
   pokemonId: number;
-  level: number; // 1-100, user configurable
 
   // Competitive fields
   abilityIdentifier: string;
@@ -217,8 +216,8 @@ export interface TeamPokemon {
   itemId?: number;
   natureId: number;
 
-  evs: StatSpread; // 0-252 per stat, max 510 total
-  ivs: StatSpread; // 0-31 per stat, default 31
+  evs: StatSpread; // 0-32 per stat, max 66 total
+
 
   // Generation-specific features
   teraType?: string; // Gen 9 Tera Type
