@@ -255,9 +255,9 @@ export interface TeamPokemon {
 }
 
 export interface MoveData {
-  id: number;
   identifier: string;
-  name: string;
+  nameEn: string;
+  nameJa?: string | null;
   type: string;
   category: string;
   power: number | null;
