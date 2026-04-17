@@ -232,6 +232,14 @@ export interface TeamPokemon {
     nameLower?: string;
     types: string[];
     imageUrl?: string;
+    baseStats?: {
+      hp: number;
+      attack: number;
+      defense: number;
+      specialAttack: number;
+      specialDefense: number;
+      speed: number;
+    };
   };
   movesData?: MoveData[];
   itemData?: {
@@ -251,6 +259,7 @@ export interface TeamPokemon {
     id: number;
     identifier: string;
     name: string;
+    description?: string | null;
   };
 }
 
@@ -263,6 +272,7 @@ export interface MoveData {
   power: number | null;
   accuracy: number | null;
   pp: number | null;
+  description?: string | null;
 }
 
 export interface Team {
